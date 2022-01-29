@@ -24,7 +24,7 @@ const SavedBooks = () => {
     fetchPolicy: "no-cache",
   });
 
-  const [userData, setUserData] = useState({});
+  // const [userData, setUserData] = useState({});
 
   // use this to determine if `useEffect()` hook needs to run again
   // const userDataLength = Object.keys(userData).length;

@@ -1,65 +1,43 @@
-// * `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
+const { gql } = require("apollo-server-express");
 
-// * `Query` type:
+const typeDefs = gql`
+  type User {
+    _id: ID
+    username: String
+    email: String
+    password: String
+    bookCount: String
+    savedBooks: [Book]
+  }
 
-//   * `me`: Which returns a `User` type.
+  type Book {
+    authors: String
+    description: String
+    bookId: String
+    image: String
+    link: String
+    title: String
+  }
 
-// * `Mutation` type:
+  type Auth {
+    token: ID!
+    user: User
+  }
 
-//   * `login`: Accepts an email and password as parameters; returns an `Auth` type.
+  type Query {
+    users: [User]
+    user(name: String!): User
+  }
 
-//   * `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+  }
+`;
 
-//   * `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
+module.exports = typeDefs;
 
-//   * `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
-
-// * `User` type:
-//   * `_id`
-//   * `username`
-//   * `email`
-//   * `bookCount`
-//   * `savedBooks` (This will be an array of the `Book` type.)
-
-// * `Book` type:
-//   * `bookId` (Not the `_id`, but the book's `id` value returned from Google's Book API.)
-//   * `authors` (An array of strings, as there may be more than one author.)
-//   * `description`
-//   * `title`
-//   * `image`
-//   * `link`
-
-// * `Auth` type:
-//   * `token`
-//   * `user` (References the `User` type.)
-
-// ===========================
-
-// const { gql } = require('apollo-server-express');
-
-// const typeDefs = gql`
-//   type Tech {
-//     _id: ID!
-//     name: String!
-//   }
-
-//   type Matchup {
-//     _id: ID!
-//     tech1: String!
-//     tech2: String!
-//     tech1_votes: Int
-//     tech2_votes: Int
-//   }
-
-//   type Query {
-//     tech: [Tech]
-//     matchups(_id: String): [Matchup]
-//   }
-
-//   type Mutation {
-//     createMatchup(tech1: String!, tech2: String!): Matchup
-//     createVote(_id: String!, techNum: Int!): Matchup
-//   }
-// `;
-
-// module.exports = typeDefs;
+// bookCount(username: String): [Book]
+// savedBooks(bookId: ID!): Book
+// addUser(username: String!, email: String!, password: String!): Auth
+// saveBook([{authors}], description, title, bookId, image, link): User
