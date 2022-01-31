@@ -1,52 +1,52 @@
 [
   {
-    "username": "Brian Kernighan",
-    "email": "bkernighan@techfriends.dev",
+    "username": "Ernest Hemz",
+    "email": "bigErn@yahoo.com",
     "password": "password01"
   },
   {
-    "username": "Max Kanat-Alexander",
-    "email": "mkanatalexander@techfriends.dev",
+    "username": "Mark Twainy",
+    "email": "marktwain@gmail.com",
     "password": "password02"
   },
   {
-    "username": "Why The Lucky Stiff",
-    "email": "wtls@techfriends.dev",
+    "username": "George The Orwellian",
+    "email": "georgeorwell@hotmail.com",
     "password": "password03"
   },
   {
-    "username": "Kent Beck",
-    "email": "kbeck@techfriends.dev",
+    "username": "J.D. Gun Slinger",
+    "email": "jdsalinger@yahoo.com",
     "password": "password04"
   },
   {
-    "username": "Edward V. Berard",
-    "email": "evberard@techfriends.dev",
+    "username": "Virginia The Wolf",
+    "email": "virginia@thewolf.com",
     "password": "password05"
   },
   {
-    "username": "Alan Kay",
-    "email": "akay@techfriends.dev",
+    "username": "William Shakethatspear",
+    "email": "w.shakespeare@gmail.com",
     "password": "password06"
   },
   {
-    "username": "C.A.R. Hoare",
-    "email": "choare@techfriends.dev",
+    "username": "James Bald Winds",
+    "email": "j.baldwin@greatminds.com",
     "password": "password07"
   },
   {
-    "username": "David Thomas",
-    "email": "dthomas@techfriends.dev",
+    "username": "Oscar Wildman",
+    "email": "oscarwilde@aol.com",
     "password": "password08"
   },
   {
-    "username": "Donald Knuth",
-    "email": "dknuth@techfriends.dev",
+    "username": "Charlie Dicky",
+    "email": "charles.dickens@twocities.com",
     "password": "password09"
   },
   {
-    "username": "Lernantino",
-    "email": "lernantino@techfriends.dev",
+    "username": "F. Scotty Fitz",
+    "email": "fitzgerald@gatsby.com",
     "password": "password10"
   }
 ]

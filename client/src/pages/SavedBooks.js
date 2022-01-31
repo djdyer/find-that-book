@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useMutation, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { QUERY_GET_ME } from "../utils/queries";
-import { REMOVE_BOOK } from "../utils/mutations";
+// import { REMOVE_BOOK } from "../utils/mutations";
 
 import {
   Jumbotron,
@@ -20,14 +20,14 @@ import { removeBookId } from "../utils/localStorage";
 // - Instead, use the `useQuery()` Hook to execute the `GET_ME` query on load and save it to a variable named `userData`.
 
 const SavedBooks = () => {
-  const { userData } = useQuery(QUERY_GET_ME, {
+  const { userData, setUserData } = useQuery(QUERY_GET_ME, {
     fetchPolicy: "no-cache",
   });
 
   // const [userData, setUserData] = useState({});
 
   // use this to determine if `useEffect()` hook needs to run again
-  // const userDataLength = Object.keys(userData).length;
+  const userDataLength = Object.keys(userData).length;
 
   // useEffect(() => {
   //   const getUserData = async () => {

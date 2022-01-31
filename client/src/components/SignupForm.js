@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
 
@@ -12,6 +14,8 @@ const SignupForm = () => {
     email: "",
     password: "",
   });
+  const [addUser, { error, data }] = useMutation(ADD_USER);
+
   // set state for form validation
   const [validated] = useState(false);
   // set state for alert
@@ -33,17 +37,21 @@ const SignupForm = () => {
     }
 
     try {
-      const response = await createUser(userFormData);
+      // const response = await createUser(userFormData);
 
-      if (!response.ok) {
+      const { data } = await addUser({
+        variables: { ...userFormData },
+      });
+
+      if (!data.ok) {
         throw new Error("something went wrong!");
       }
 
-      const { token, user } = await response.json();
+      const { token, user } = await data.json();
       console.log(user);
       Auth.login(token);
     } catch (err) {
-      console.error(err);
+      console.error(error);
       setShowAlert(true);
     }
 
