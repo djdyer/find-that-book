@@ -11,12 +11,12 @@ const typeDefs = gql`
   }
 
   type Book {
+    title: String
     authors: String
     description: String
     bookId: String
     image: String
     link: String
-    title: String
   }
 
   type Auth {
@@ -25,6 +25,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    me: User
     users: [User]
     user(name: String!): User
   }
@@ -32,12 +33,9 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    addBook(bookText: String!): User
+    removeBook(bookId: ID!): User
   }
 `;
 
 module.exports = typeDefs;
-
-// bookCount(username: String): [Book]
-// savedBooks(bookId: ID!): Book
-// addUser(username: String!, email: String!, password: String!): Auth
-// saveBook([{authors}], description, title, bookId, image, link): User
