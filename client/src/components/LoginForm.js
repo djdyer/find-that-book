@@ -5,8 +5,6 @@ import { LOGIN_USER } from "../utils/mutations";
 
 import Auth from "../utils/auth";
 
-// Replace the `loginUser()` functionality imported from the `API` file with the `LOGIN_USER` mutation functionality.
-
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: "", password: "" });
   const [login] = useMutation(LOGIN_USER);

@@ -11,7 +11,6 @@ const SignupForm = () => {
     password: "",
   });
   const [addUser] = useMutation(ADD_USER);
-
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
 
