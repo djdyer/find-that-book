@@ -37,9 +37,7 @@ SO THAT I can keep a list of books to purchase
 
 ## Demo
 
-[<img src="./assets/images/youtube.png" width="1200px">](https://youtu.be/.../)
-
-<img width="1200" src="./assets/demo/...png">
+<img width="1200" src="./assets/demo/screenshot.png">
 
 <br />
 <br />
@@ -48,17 +46,16 @@ SO THAT I can keep a list of books to purchase
 
 ⬇️
 
-Must first initialized with the following commands:
+Optionally seed database with the following command:
 
 ```
-...
-
+node server/seeders/seed
 ```
 
-Application will then run in the command-line with:
+Application will run in the command-line with:
 
 ```
-...
+npm run start
 ```
 
 <br />
@@ -68,13 +65,16 @@ Application will then run in the command-line with:
 
 [Deployed with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas)
 
-[<img src="./assets/images/heroku.png" height="80px">](https://.../)
+[<img src="./assets/images/heroku.png" height="100px">](https://.../)
 
 <br />
 
 **Employing the following technology:**
 
-[<img src="./assets/images/...svg" height="20px">](https://...)
+MERN STACK
+
+[<img src="./assets/images/mongodb.svg" height="20px">](https://www.mongodb.com/) [<img src="./assets/images/express.svg" height="20px">](https://expressjs.com/) [<img src="./assets/images/react.svg" height="20px">](https://reactjs.org/) [<img src="./assets/images/node.svg" height="20px">](https://nodejs.org/en/)  
+[<img src="./assets/images/graphql.svg" height="20px">](https://graphql.org/) [<img src="./assets/images/google.svg" height="20px">](https://developers.google.com/books)
 
 <br />
 <br />
@@ -115,9 +115,9 @@ Logging out routes to original homepage menu.
 
 ## Collaboration
 
-**...**  
-<a href= "https://github.com/..."><img src=
-"https://avatars...." width="50px"/></a>
+**Julius Markauskas**
+
+<a href="https://github.com/Juliusm9791"><img src="https://avatars.githubusercontent.com/u/88810468?v=4" width="50px"/></a>
 
 <br />
 <br />
