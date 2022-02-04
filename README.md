@@ -65,7 +65,7 @@ npm run start
 
 [Deployed with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas)
 
-[<img src="./assets/images/heroku.png" height="100px">](https://.../)
+[<img src="./assets/images/heroku.png" height="100px">](https://find--that--book.herokuapp.com/)
 
 <br />
 
